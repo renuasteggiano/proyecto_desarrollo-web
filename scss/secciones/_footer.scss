@@ -1,0 +1,73 @@
+footer {
+    border-top: solid 2px black;
+    padding: 5px 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "redes texto contacto";
+    height: 50px;
+    .footer_redes {
+        grid-area: redes;
+        align-self: center;
+        justify-self: start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .footer_texto {
+        grid-area: texto;
+        align-self: center;
+        justify-self: center;
+        p{
+            font-family: "texto";
+            text-align: center;
+        }
+    }
+    .footer_contacto{
+        grid-area: contacto;
+        align-self: center;
+        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-right: 20px;
+        a{
+            font-family: "texto";
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    img{
+        width: 30px;
+    }
+}
+
+@media (max-width: 1000px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        justify-content: space-between;
+        .footer_redes {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0px;
+        }
+        .footer_texto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0px;
+        }
+        .footer_contacto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 0px;
+        }
+    }
+}

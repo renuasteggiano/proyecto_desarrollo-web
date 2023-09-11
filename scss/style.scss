@@ -1,0 +1,347 @@
+@import "../scss/recursos/reset";
+@import "../scss/recursos/tipografia";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../scss/secciones/texto";
+@import "../scss/secciones/barra-de-navegacion";
+@import "../scss/secciones/footer";
+
+@import "../scss/secciones/index";
+
+/* Cartas Portfolio*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: -5000;
+}
+.card{
+    width: 45vw;
+    margin: 20px 0px;
+}
+.card-title{
+    font-size: 30px;
+    font-family: "texto";
+    text-align: center;
+}
+
+/*Cabecera Paginas*/
+.cabecera{
+    height: 55vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    opacity: 80%;
+}
+.cabecera h1{
+    color: white;
+    font-family: "titulo";
+    font-size: 60px;
+}
+.cabecera h2{
+    color: white;
+    font-family: "subtitulo";
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 100px;
+}
+@media (max-width: 1000px) {
+    .cabecera h1{
+        font-size: 50px;
+    }
+    .cabecera h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cabecera h1{
+        font-size: 40px;
+    }
+    .cabecera h2{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cabecera h1{
+        font-size: 30px;
+    }
+}
+
+/*Portfolio*/
+.portfolio1{
+    background-image: url('../images/portfolio/portfolioFondo.JPG');
+}
+
+@media (max-width: 1000px) {
+    .portfolio2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio2 .card{
+        width: 80vw;
+    }
+}
+
+/*Paginas Portfolio*/
+.paginas_portfolio-bodas{
+    background-image: url('../images/bodas/bodasFondo.JPG');
+}
+.paginas_portfolio-grilla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "b1 b2 b2 b12"
+        "b1 b4 b4 b12"
+        "b11 b11 b3 b3"
+        "b11 b11 b8 b7"
+        "b5 b5 b6 b6"
+        "b9 b10 b10 b13"
+        "b15 b15 b17 b17"
+        "b16 b16 b17 b17"
+        "b14 b14 b18 b18"
+        "b19 b19 b19 b19";
+    margin: 5px 0px;
+}
+.paginas_portfolio-grilla img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.paginas_portfolio-grilla1{
+    grid-area: b1;
+}
+.paginas_portfolio-grilla2{
+    grid-area: b2;
+}
+.paginas_portfolio-grilla3{
+    grid-area: b3;
+}
+.paginas_portfolio-grilla4{
+    grid-area: b4;
+}
+.paginas_portfolio-grilla5{
+    grid-area: b5;
+}
+.paginas_portfolio-grilla6{
+    grid-area: b6;
+}
+.paginas_portfolio-grilla7{
+    grid-area: b7;
+}
+.paginas_portfolio-grilla8{
+    grid-area: b8;
+}
+.paginas_portfolio-grilla9{
+    grid-area: b9;
+}
+.paginas_portfolio-grilla10{
+    grid-area: b10;
+}
+.paginas_portfolio-grilla11{
+    grid-area: b11;
+}
+.paginas_portfolio-grilla12{
+    grid-area: b12;
+}
+.paginas_portfolio-grilla13{
+    grid-area: b13;
+}
+.paginas_portfolio-grilla14{
+    grid-area: b14;
+}
+.paginas_portfolio-grilla15{
+    grid-area: b15;
+}
+.paginas_portfolio-grilla16{
+    grid-area: b16;
+}
+.paginas_portfolio-grilla17{
+    grid-area: b17;
+}
+.paginas_portfolio-grilla18{
+    grid-area: b18;
+}
+.paginas_portfolio-grilla19{
+    grid-area: b19;
+}
+
+/* Sobre Mi­*/
+.sobreMi{
+    margin-bottom: 10px;
+}
+.sobreMi_titulo{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+}
+.sobreMi_titulo h1{
+    font-size: 50px;
+    font-family: "titulo";
+}
+.sobreMi_cuerpo{
+    display: flex;
+}
+.sobreMi_cuerpo_imagen{
+    padding-right: 10px;
+    padding-left: 15px;
+}
+.sobreMi_cuerpo_imagen img{
+    width: 45vw;
+}
+.sobreMi_cuerpo_descripcion{
+    padding-right: 15px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.sobreMi_cuerpo_descripcion h3{
+    font-size: 30px;
+    font-family: "subtitulo";
+}
+.sobreMi_cuerpo_descripcion h2{
+    font-size: 40px;
+    font-family: "subtitulo";
+    padding-bottom: 15px;
+}
+.sobreMi_cuerpo_descripcion p{
+    font-size: 16px;
+    font-family: "texto";
+    line-height: 22px;
+}
+@media (max-width: 1300px) {
+    .sobreMi_cuerpo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobreMi_cuerpo_imagen img{
+        width: 600px;
+    }
+    .sobreMi_cuerpo_descripcion{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1000px){
+    .sobreMi_titulo h1{
+        font-size: 40px;
+    }
+    .sobreMi_cuerpo_descripcion h3{
+        font-size: 20px;
+    }
+    .sobreMi_cuerpo_descripcion h2{
+        font-size: 30px;
+    }
+}
+@media (max-width: 400px){
+    .sobreMi_titulo h1{
+        font-size: 30px;
+    }
+    .sobreMi_cuerpo_descripcion h3{
+        font-size: 15px;
+    }
+    .sobreMi_cuerpo_descripcion h2{
+        font-size: 20px;
+    }
+}
+
+/*Contacto*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/contacto/contactoFondo.JPG');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.contacto h1{
+    font-size: 50px;
+    font-family: "titulo";
+    padding: 10px 0px;
+}
+.contacto_formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto_formulario input, .contacto_formulario textarea{
+    width: 80vw;
+    margin: 5px 0px;
+    border: 1.5px solid black;
+    font-size: 25px;
+    font-family: "texto";
+    color: black;
+    padding: 10px;
+    opacity: 90%;
+}
+.contacto_formulario button{
+    border: 2px solid black;
+    font-size: 35px;
+    font-family: "subtitulo";
+    padding: 5px 40px;
+    background-color: rgba(255, 255, 255, 0.857);
+    margin: 5px 0px;
+}
+@media (max-width: 1000px){
+    .contacto h1{
+        font-size: 40px;
+    }
+    .contacto_formulario input, .contacto_formulario textarea{
+        font-size: 20px;
+    }
+    .contacto_formulario button{
+        font-size: 25px;
+    }
+}
+@media (max-width: 400px){
+    .contacto h1{
+        font-size: 30px;
+    }
+    .contacto_formulario input, .contacto_formulario textarea{
+        font-size: 16px;
+    }
+    .contacto_formulario button{
+        font-size: 20px;
+    }
+}
+
+/*Testimonios*/
+.testimonios1{
+    background-image: url('../images/testimonios/testimoniosFondo.JPG');
+}
+.testimonios2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 100px;
+}
+.testimonios2_caja{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 5px;
+}
+.testimonios2_caja-img img{
+    height: 400px;
+}
+.testimonios2_caja-texto{
+    padding: 0px 40px;
+}
+.testimonios2_caja-texto h3{
+    font-family: "titulo";
+    font-size: 40px;
+}
+.testimonios2_caja-texto p{
+    font-family: "texto";
+    font-size: 20px;
+}

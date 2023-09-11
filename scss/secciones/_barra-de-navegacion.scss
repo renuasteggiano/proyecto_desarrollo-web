@@ -1,0 +1,32 @@
+header{
+    border-bottom: solid 2px black;
+    font-family: "texto";
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.857);
+    z-index: 5000;
+}
+.header_index{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.navbar-toggler{
+    border: none;
+}
+.nav-link:focus-visible {
+    box-shadow: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    border-radius: 0%;
+    border: 0px;
+}
+.navbar-brand{ 
+    img{
+        width: 80px;
+    }
+}
