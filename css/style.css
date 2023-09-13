@@ -12304,6 +12304,93 @@ footer .footer_contacto a img {
     padding: 15px 0px;
   }
 }
+/* Sobre Mi­*/
+.sobreMi {
+  margin-bottom: 10px;
+}
+.sobreMi .sobreMi_titulo {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+}
+.sobreMi .sobreMi_titulo h1, .sobreMi .sobreMi_titulo .h1 {
+  font-size: 50px;
+  font-family: "titulo";
+}
+.sobreMi .sobreMi_cuerpo {
+  display: flex;
+  align-items: center;
+}
+.sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_imagen {
+  padding-right: 10px;
+  padding-left: 15px;
+}
+.sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_imagen img {
+  width: 45vw;
+}
+.sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion {
+  padding-right: 15px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+.sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion h3, .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion .h3 {
+  font-size: 30px;
+  font-family: "subtitulo";
+}
+.sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion h2, .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion .h2 {
+  font-size: 40px;
+  font-family: "subtitulo";
+  padding-bottom: 15px;
+}
+.sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion p {
+  font-size: 16px;
+  font-family: "texto";
+  line-height: 22px;
+}
+
+@media (max-width: 1300px) {
+  .sobreMi .sobreMi_cuerpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_imagen img {
+    width: 600px;
+  }
+  .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .sobreMi .sobreMi_titulo h1, .sobreMi .sobreMi_titulo .h1 {
+    font-size: 40px;
+  }
+  .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion h3, .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion .h3 {
+    font-size: 20px;
+  }
+  .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion h2, .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion .h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_imagen img {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .sobreMi .sobreMi_titulo h1, .sobreMi .sobreMi_titulo .h1 {
+    font-size: 30px;
+  }
+  .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_imagen img {
+    width: 300px;
+  }
+  .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion h3, .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion .h3 {
+    font-size: 15px;
+  }
+  .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion h2, .sobreMi .sobreMi_cuerpo .sobreMi_cuerpo_descripcion .h2 {
+    font-size: 20px;
+  }
+}
 /* Cartas Portfolio*/
 .cards {
   display: flex;
@@ -12484,93 +12571,6 @@ footer .footer_contacto a img {
   grid-area: b19;
 }
 
-/* Sobre Mi­*/
-.sobreMi {
-  margin-bottom: 10px;
-}
-
-.sobreMi_titulo {
-  display: flex;
-  justify-content: center;
-  padding: 5px 0px;
-}
-
-.sobreMi_titulo h1, .sobreMi_titulo .h1 {
-  font-size: 50px;
-  font-family: "titulo";
-}
-
-.sobreMi_cuerpo {
-  display: flex;
-}
-
-.sobreMi_cuerpo_imagen {
-  padding-right: 10px;
-  padding-left: 15px;
-}
-
-.sobreMi_cuerpo_imagen img {
-  width: 45vw;
-}
-
-.sobreMi_cuerpo_descripcion {
-  padding-right: 15px;
-  padding-left: 10px;
-  margin-bottom: 5px;
-}
-
-.sobreMi_cuerpo_descripcion h3, .sobreMi_cuerpo_descripcion .h3 {
-  font-size: 30px;
-  font-family: "subtitulo";
-}
-
-.sobreMi_cuerpo_descripcion h2, .sobreMi_cuerpo_descripcion .h2 {
-  font-size: 40px;
-  font-family: "subtitulo";
-  padding-bottom: 15px;
-}
-
-.sobreMi_cuerpo_descripcion p {
-  font-size: 16px;
-  font-family: "texto";
-  line-height: 22px;
-}
-
-@media (max-width: 1300px) {
-  .sobreMi_cuerpo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .sobreMi_cuerpo_imagen img {
-    width: 600px;
-  }
-  .sobreMi_cuerpo_descripcion {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 1000px) {
-  .sobreMi_titulo h1, .sobreMi_titulo .h1 {
-    font-size: 40px;
-  }
-  .sobreMi_cuerpo_descripcion h3, .sobreMi_cuerpo_descripcion .h3 {
-    font-size: 20px;
-  }
-  .sobreMi_cuerpo_descripcion h2, .sobreMi_cuerpo_descripcion .h2 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 400px) {
-  .sobreMi_titulo h1, .sobreMi_titulo .h1 {
-    font-size: 30px;
-  }
-  .sobreMi_cuerpo_descripcion h3, .sobreMi_cuerpo_descripcion .h3 {
-    font-size: 15px;
-  }
-  .sobreMi_cuerpo_descripcion h2, .sobreMi_cuerpo_descripcion .h2 {
-    font-size: 20px;
-  }
-}
 /*Contacto*/
 .contacto {
   display: flex;
