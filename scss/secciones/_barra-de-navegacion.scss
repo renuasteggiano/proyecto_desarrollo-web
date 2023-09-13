@@ -6,27 +6,38 @@ header{
     top: 0;
     background-color: rgba(255, 255, 255, 0.857);
     z-index: 5000;
+    nav{
+        div{
+            .navbar-brand{ 
+                img{
+                    width: 80px;
+                }
+            }
+            .navbar-toggler{
+                border: none;
+            }
+            div{
+                div{
+                    ul{
+                        .dropdown:hover{
+                            display: block;
+                            .nav-link:focus-visible {
+                                box-shadow: none;
+                            }
+                            .dropdown-menu{
+                                display: block;
+                                border-radius: 0%;
+                                border: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .header_index{
     display: flex;
     flex-direction: row;
     justify-content: end;
-}
-.navbar-toggler{
-    border: none;
-}
-.nav-link:focus-visible {
-    box-shadow: none;
-}
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
-.dropdown-menu{
-    border-radius: 0%;
-    border: 0px;
-}
-.navbar-brand{ 
-    img{
-        width: 80px;
-    }
 }
