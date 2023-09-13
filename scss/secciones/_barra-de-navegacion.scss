@@ -21,8 +21,10 @@ header{
                     ul{
                         .dropdown:hover{
                             display: block;
-                            .nav-link:focus-visible {
+                            .nav-link{
+                                &:focus-visible {
                                 box-shadow: none;
+                                }
                             }
                             .dropdown-menu{
                                 display: block;

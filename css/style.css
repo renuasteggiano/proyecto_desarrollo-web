@@ -12002,32 +12002,28 @@ header {
   background-color: rgba(255, 255, 255, 0.857);
   z-index: 5000;
 }
+header nav div .navbar-brand img {
+  width: 80px;
+}
+header nav div .navbar-toggler {
+  border: none;
+}
+header nav div div div ul .dropdown:hover {
+  display: block;
+}
+header nav div div div ul .dropdown:hover .nav-link:focus-visible {
+  box-shadow: none;
+}
+header nav div div div ul .dropdown:hover .dropdown-menu {
+  display: block;
+  border-radius: 0%;
+  border: 0px;
+}
 
 .header_index {
   display: flex;
   flex-direction: row;
   justify-content: end;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.nav-link:focus-visible {
-  box-shadow: none;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
-  border-radius: 0%;
-  border: 0px;
-}
-
-.navbar-brand img {
-  width: 80px;
 }
 
 footer {
@@ -12037,7 +12033,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "redes texto contacto";
-  height: 50px;
+  height: auto;
 }
 footer .footer_redes {
   grid-area: redes;
@@ -12048,14 +12044,19 @@ footer .footer_redes {
   align-items: flex-start;
   padding-left: 20px;
 }
+footer .footer_redes a img {
+  width: 30px;
+}
 footer .footer_texto {
   grid-area: texto;
-  align-self: center;
-  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .footer_texto p {
   font-family: "texto";
   text-align: center;
+  margin-bottom: 0;
 }
 footer .footer_contacto {
   grid-area: contacto;
@@ -12072,7 +12073,7 @@ footer .footer_contacto a {
   flex-direction: row;
   align-items: center;
 }
-footer img {
+footer .footer_contacto a img {
   width: 30px;
 }
 
