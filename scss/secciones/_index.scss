@@ -44,13 +44,81 @@
     }
 }
 .index2{
-    padding: 40px 0px;
+    padding: 30px 0px;
     text-align: center;
     z-index: -1;
     a{
         h3{
             font-size: 40px;
             font-family: "subtitulo";
+            cursor: pointer;
+            margin: auto;
+            transition: font-weight 0.1s ease-in-out;
+            &:hover {
+                font-weight: 1000;
+            }
+            &:active {
+                font-weight: 1000;
+            }
+        }
+    }
+    .index2_portfolio{
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        gap: 10px;
+        margin: 20px 0px;
+        div{
+            flex: 0 0 120px;
+            border-radius: 0.5rem;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            &:nth-of-type(1) {
+                background: url("../../images/portfolio/portfolio_bodas.JPG") no-repeat 50% / cover;
+            }
+            &:nth-of-type(2) {
+                background: url("../../images/portfolio/portfolio_estudio.JPG") no-repeat 50% / cover;
+            }
+            &:nth-of-type(3) {
+                background: url("../../images/portfolio/portfolio_fiestade15.JPG") no-repeat 50% / cover;
+            }
+            &:nth-of-type(4) {
+                background: url("../../images/portfolio/portfolio_exteriores.JPG") no-repeat 50% / cover;
+            }
+            a{
+                .index2_portfolio_contenido{
+                    font-size: 1.5rem;
+                    font-family: "texto";
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    padding: 15px;
+                    opacity: 0;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: flex-end;
+                    background: rgba(255, 255, 255, 0);
+                    background: linear-gradient(
+                    0deg,
+                    rgba(254, 254, 255, 0.645) 0%,
+                    rgba(255, 255, 255, 0) 100%
+                    );
+                    transform: translatey(100%);
+                    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+                    visibility: hidden;
+                }
+            }
+            &:hover {
+                flex: 0 0 250px;
+                transform: translatey(-30px);
+            }
+            &:hover .index2_portfolio_contenido {
+                opacity: 1;
+                transform: translatey(0%);
+                visibility: visible;
+            }
         }
     }
     form{
@@ -59,6 +127,15 @@
             border: 2px solid black;
             background-color: white;
             padding: 5px 20px;
+            cursor: pointer;
+            margin: auto;
+            transition: font-weight 0.1s ease-in-out;
+            &:hover {
+                font-weight: 800;
+            }
+            &:active {
+                font-weight: 800;
+            }
         }
     }
 }
@@ -86,6 +163,7 @@
         }
     }
     .index2{
+        padding: 25px 0px;
         a{
             h3{
                 font-size: 30px;
@@ -125,17 +203,37 @@
         }
     }
     .index2{
+        padding: 20px 0px;
         a{
             h3{
                 font-size: 20px;
             }
         }
         .card-title{
-            font-size: 10px;
+            font-size: 16px;
+        }
+        form{
+            button{
+                font-size: 16px;
+                padding: 4px 15px;
+            }
         }
     }
 }
-
+@media (max-width: 650px){
+    .index2{
+        .index2_portfolio{
+            display: none;
+        }
+    }
+}
+@media (min-width:651px) {
+    .index2{
+        .cards{
+            display: none;
+        }
+    }
+}
 @media (max-width: 400px) {
     .index1{ 
         .index1_texto{
@@ -143,5 +241,8 @@
                 font-size: 40px;
             }
         }
+    }
+    .index2{
+        padding: 15px 0px;
     }
 }
