@@ -12117,17 +12117,34 @@ footer .footer_contacto a img {
 .index1 .index1_texto h1, .index1 .index1_texto .h1 {
   font-size: 70px;
   font-family: "titulo";
+  text-shadow: 2px 2px 8px white;
 }
 .index1 .index1_texto h2, .index1 .index1_texto .h2 {
   font-size: 50px;
   font-family: "subtitulo";
+  text-shadow: 2px 2px 8px white;
 }
-.index1 .carousel-inner {
+.index1 div .carousel-inner {
   height: 95vh;
   z-index: -1000;
 }
-.index1 .carousel-inner .carousel-item img {
-  opacity: 50%;
+.index1 div .carousel-inner .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index1 div .carousel-inner .carousel-item1 {
+  background-image: url("../../images/carousel/carrusel1.jpg");
+}
+.index1 div .carousel-inner .carousel-item2 {
+  background-image: url("../../images/carousel/carrusel2.jpg");
+}
+.index1 div .carousel-inner .carousel-item3 {
+  background-image: url("../../images/carousel/carrusel3.jpg");
+}
+.index1 div .carousel-inner .carousel-item4 {
+  background-image: url("../../images/carousel/carrusel4.jpg");
 }
 
 .index2 {
@@ -12135,55 +12152,61 @@ footer .footer_contacto a img {
   text-align: center;
   z-index: -1;
 }
-.index2 h3, .index2 .h3 {
+.index2 a h3, .index2 a .h3 {
   font-size: 40px;
   font-family: "subtitulo";
 }
-.index2 button {
+.index2 form button {
   font-size: 30px;
   border: 2px solid black;
   background-color: white;
   padding: 5px 20px;
 }
 
+@media (max-width: 1300px) {
+  .index1 div .carousel-inner .carousel-item2 {
+    background-image: url("../../images/carousel/carrusel2-mobile.jpg");
+  }
+}
 @media (max-width: 1000px) {
-  .index1 h1, .index1 .h1 {
+  .index1 .index1_texto h1, .index1 .index1_texto .h1 {
     font-size: 60px;
   }
-  .index1 h2, .index1 .h2 {
+  .index1 .index1_texto h2, .index1 .index1_texto .h2 {
     font-size: 40px;
   }
-  .index2 h3, .index2 .h3 {
+  .index2 a h3, .index2 a .h3 {
     font-size: 30px;
   }
   .index2 .card-title {
     font-size: 20px;
   }
-  .index2 button {
+  .index2 form button {
     font-size: 20px;
     border: 1px solid black;
+  }
+}
+@media (min-width: 900px) {
+  .index1 div .carousel-inner .carousel-item4 {
+    background-image: url("../../images/carousel/carrusel4-xl.jpg");
   }
 }
 @media (max-width: 700px) {
-  .index1 h1, .index1 .h1 {
+  .index1 .index1_texto h1, .index1 .index1_texto .h1 {
     font-size: 50px;
   }
-  .index1 h2, .index1 .h2 {
+  .index1 .index1_texto h2, .index1 .index1_texto .h2 {
     font-size: 30px;
   }
-  .index2 h3, .index2 .h3 {
+  .index2 a h3, .index2 a .h3 {
     font-size: 20px;
   }
   .index2 .card-title {
-    font-size: 16px;
-  }
-  .index2 button {
-    font-size: 16px;
-    border: 1px solid black;
+    font-size: 10px;
   }
 }
 @media (max-width: 400px) {
-  .index1 h1, .index1 .h1 {
+  .index1 .index1_texto h1, .index1 .index1_texto .h1 {
     font-size: 40px;
   }
 }

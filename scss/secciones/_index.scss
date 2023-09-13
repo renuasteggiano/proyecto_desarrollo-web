@@ -10,18 +10,35 @@
         h1{
             font-size: 70px;
             font-family: "titulo";
+            text-shadow: 2px 2px 8px white;
         }
         h2{
             font-size: 50px;
             font-family: "subtitulo";
+            text-shadow: 2px 2px 8px white;
         }
     }
-    .carousel-inner{
-        height: 95vh;
-        z-index: -1000;
-        .carousel-item{
-            img{
-            opacity: 50%;
+    div{
+        .carousel-inner{
+            height: 95vh;
+            z-index: -1000;
+            .carousel-item{
+                height: 100vh;
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+            }
+            .carousel-item1{
+                background-image: url('../../images/carousel/carrusel1.jpg');
+            }
+            .carousel-item2{
+                background-image: url('../../images/carousel/carrusel2.jpg');
+            }
+            .carousel-item3{
+                background-image: url('../../images/carousel/carrusel3.jpg');
+            }
+            .carousel-item4{
+                background-image: url('../../images/carousel/carrusel4.jpg');
             }
         }
     }
@@ -30,68 +47,101 @@
     padding: 40px 0px;
     text-align: center;
     z-index: -1;
-    h3{
-        font-size: 40px;
-        font-family: "subtitulo";
+    a{
+        h3{
+            font-size: 40px;
+            font-family: "subtitulo";
+        }
     }
-    button{
-        font-size: 30px;
-        border: 2px solid black;
-        background-color: white;
-        padding: 5px 20px;
+    form{
+        button{
+            font-size: 30px;
+            border: 2px solid black;
+            background-color: white;
+            padding: 5px 20px;
+        }
     }
 }
 
+@media (max-width: 1300px){
+    .index1{
+        div{
+            .carousel-inner{
+                .carousel-item2{
+                    background-image: url('../../images/carousel/carrusel2-mobile.jpg');
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1000px) {
     .index1{ 
-        h1{
-            font-size: 60px;
-        }
-        h2{
-            font-size: 40px;
+       .index1_texto{
+            h1{
+                font-size: 60px;
+            }
+            h2{
+                font-size: 40px;
+            }
         }
     }
     .index2{
-        h3{
-            font-size: 30px;
+        a{
+            h3{
+                font-size: 30px;
+            }
         }
         .card-title{
             font-size: 20px;
         }
-        button{
-            font-size: 20px;
-            border: 1px solid black;
+        form{
+            button{
+                font-size: 20px;
+                border: 1px solid black;
+            }
         }
     }
 }
-
-@media (max-width: 700px) {
+@media (min-width: 900px){
     .index1{
-        h1{
-            font-size: 50px;
+        div{
+            .carousel-inner{
+                .carousel-item4{
+                    background-image: url('../../images/carousel/carrusel4-xl.jpg');
+                }
+            }
         }
-        h2{
-            font-size: 30px;
+    }
+}
+@media (max-width: 700px) {
+    .index1{ 
+        .index1_texto{
+            h1{
+                font-size: 50px;
+            }
+            h2{
+                font-size: 30px;
+            }
         }
     }
     .index2{
-        h3{
-            font-size: 20px;
+        a{
+            h3{
+                font-size: 20px;
+            }
         }
         .card-title{
-            font-size: 16px;
-        }
-        button{
-            font-size: 16px;
-            border: 1px solid black;
+            font-size: 10px;
         }
     }
 }
 
 @media (max-width: 400px) {
-    .index1{
-        h1{
-            font-size: 40px;
+    .index1{ 
+        .index1_texto{
+            h1{
+                font-size: 40px;
+            }
         }
     }
 }
