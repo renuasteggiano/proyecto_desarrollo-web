@@ -13,35 +13,4 @@
 @import "../scss/secciones/portfolio";
 @import "../scss/secciones/bodas";
 @import "../scss/secciones/contacto";
-
-/*Testimonios*/
-.testimonios1{
-    background-image: url('../images/testimonios/testimoniosFondo.JPG');
-}
-.testimonios2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 100px;
-}
-.testimonios2_caja{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px 5px;
-}
-.testimonios2_caja-img img{
-    height: 400px;
-}
-.testimonios2_caja-texto{
-    padding: 0px 40px;
-}
-.testimonios2_caja-texto h3{
-    font-family: "titulo";
-    font-size: 40px;
-}
-.testimonios2_caja-texto p{
-    font-family: "texto";
-    font-size: 20px;
-}
+@import "../scss/secciones/testimonios";

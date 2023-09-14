@@ -1,0 +1,118 @@
+.testimonios1{
+    background-image: url('../../images/testimonios/testimoniosFondo.jpg');
+}
+.testimonios2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 100px;
+    .testimonios2_caja{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 5px;
+        .testimonios2_caja-img{
+            img{
+                height: 400px;
+            }
+        }
+        .testimonios2_caja-texto{
+            padding: 0px 40px;
+            h3{
+                font-family: "titulo";
+                font-size: 40px;
+            }
+            p{
+                font-family: "texto";
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .testimonios2{
+        margin: 10px 50px;
+        .testimonios2_caja{
+            .testimonios2_caja-texto{
+                padding: 0px 30px;
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .testimonios2{
+        width: 600px;
+        margin: auto;
+        .testimonios2_caja{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px 10px 0px;
+            .testimonios2_caja-img{
+                img{
+                    height: 400px;
+                    width: 600px;
+                    object-fit: cover;
+                }
+                .testimonios2_caja-img-desktop{
+                    display: none;
+                }
+            }
+            .testimonios2_caja-texto{
+                padding: 10px 0px 0px 0px;
+                h3{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 801px){
+    .testimonios2{
+        .testimonios2_caja{
+            .testimonios2_caja-img{
+                .testimonios2_caja-img-mobile{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width:650px){
+    .testimonios1{
+        background-image: url('../../images/testimonios/testimoniosFondo-xl.jpg');
+    }
+}
+@media (max-width: 650px) {
+    .testimonios2{
+        width: 400px;
+        .testimonios2_caja{
+            .testimonios2_caja-img{
+                img{
+                    height: 300px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .testimonios2{
+        width: 300px;
+        .testimonios2_caja{
+            .testimonios2_caja-img{
+                img{
+                    height: 200px;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
