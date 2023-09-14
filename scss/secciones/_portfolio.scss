@@ -1,0 +1,21 @@
+.portfolio1{
+    background-image: url('../../images/portfolio/portfolioFondo.jpg');
+}
+
+@media (min-width: 1250px){
+    .portfolio1{
+        background-image: url('../../images/portfolio/portfolioFondo-xl.jpg');
+    }
+}
+@media (max-width: 1000px) {
+    .portfolio2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio2{
+        .card{
+            width: 80vw;
+        }
+    }
+}

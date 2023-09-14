@@ -5,92 +5,12 @@
 @import "../scss/secciones/texto";
 @import "../scss/secciones/barra-de-navegacion";
 @import "../scss/secciones/footer";
+@import "../scss/secciones/cabecera-paginas";
+@import "../scss/secciones/cards";
 
 @import "../scss/secciones/index";
 @import "../scss/secciones/sobre-mi";
-
-/* Cartas Portfolio*/
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    z-index: -5000;
-}
-.card{
-    width: 45vw;
-    margin: 20px 0px;
-}
-.card-title{
-    font-size: 30px;
-    font-family: "texto";
-    text-align: center;
-}
-
-/*Cabecera Paginas*/
-.cabecera{
-    height: 55vh;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid black;
-    opacity: 80%;
-}
-.cabecera h1{
-    color: white;
-    font-family: "titulo";
-    font-size: 60px;
-}
-.cabecera h2{
-    color: white;
-    font-family: "subtitulo";
-    text-align: center;
-    font-size: 30px;
-    margin: 5px 100px;
-}
-@media (max-width: 1000px) {
-    .cabecera h1{
-        font-size: 50px;
-    }
-    .cabecera h2{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 700px) {
-    .cabecera h1{
-        font-size: 40px;
-    }
-    .cabecera h2{
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 400px) {
-    .cabecera h1{
-        font-size: 30px;
-    }
-}
-
-/*Portfolio*/
-.portfolio1{
-    background-image: url('../images/portfolio/portfolioFondo.JPG');
-}
-
-@media (max-width: 1000px) {
-    .portfolio2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .portfolio2 .card{
-        width: 80vw;
-    }
-}
+@import "../scss/secciones/portfolio";
 
 /*Paginas Portfolio*/
 .paginas_portfolio-bodas{
