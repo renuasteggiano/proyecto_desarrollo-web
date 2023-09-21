@@ -12511,81 +12511,210 @@ footer .footer_contacto a img {
     width: 80vw;
   }
 }
-.paginas_portfolio-bodas {
+.paginas_portfolio_bodas {
   background-image: url("../../images/bodas/bodasFondo.jpg");
 }
 
-.paginas_portfolio-grilla {
+.paginas_portfolio_bodas-grilla {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "b1 b2 b2 b12" "b1 b4 b4 b12" "b11 b11 b3 b3" "b11 b11 b8 b7" "b5 b5 b6 b6" "b9 b10 b10 b13" "b15 b15 b17 b17" "b16 b16 b17 b17" "b14 b14 b18 b18" "b19 b19 b19 b19";
   margin: 5px 0px;
 }
-.paginas_portfolio-grilla div img {
+.paginas_portfolio_bodas-grilla div img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla1 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla1 {
   grid-area: b1;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla2 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla2 {
   grid-area: b2;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla3 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla3 {
   grid-area: b3;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla4 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla4 {
   grid-area: b4;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla5 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla5 {
   grid-area: b5;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla6 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla6 {
   grid-area: b6;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla7 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla7 {
   grid-area: b7;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla8 {
+.paginas_portfolio_bodas-grilla .paginas_portfoli_bodaso-grilla8 {
   grid-area: b8;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla9 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla9 {
   grid-area: b9;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla10 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla10 {
   grid-area: b10;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla11 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla11 {
   grid-area: b11;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla12 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla12 {
   grid-area: b12;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla13 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla13 {
   grid-area: b13;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla14 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla14 {
   grid-area: b14;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla15 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla15 {
   grid-area: b15;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla16 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla16 {
   grid-area: b16;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla17 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla17 {
   grid-area: b17;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla18 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla18 {
   grid-area: b18;
 }
-.paginas_portfolio-grilla .paginas_portfolio-grilla19 {
+.paginas_portfolio_bodas-grilla .paginas_portfolio_bodas-grilla19 {
   grid-area: b19;
 }
 
+.paginas_portfolio_estudio {
+  background-image: url("../../images/estudio/estudioFondo.jpg");
+}
+.paginas_portfolio_estudio h1, .paginas_portfolio_estudio .h1 {
+  color: black;
+  text-shadow: 2px 2px 8px white;
+}
+.paginas_portfolio_estudio h2, .paginas_portfolio_estudio .h2 {
+  color: black;
+  text-shadow: 2px 2px 8px white;
+}
+
+.paginas_portfolio_estudio-grilla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "e1 e2 e2 e3" "e1 e4 e5 e3" "e6 e7 e8 e9" "e6 e7 e8 e9" "e12 e12 e10 e14" "e12 e12 e10 e14" "e11 e16 e16 e13" "e11 e16 e16 e13" "e15 e17 e19 e18" "e15 e17 e19 e18" "e21 e21 e20 e22" "e21 e21 e23 e24" "e26 e27 e25 e25" "e26 e27 e25 e25" "e28 e28 e29 e30" "e31 e31 e29 e30";
+  margin: 5px 0px;
+}
+.paginas_portfolio_estudio-grilla div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla1 {
+  grid-area: e1;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla2 {
+  grid-area: e2;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla3 {
+  grid-area: e3;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla4 {
+  grid-area: e4;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla5 {
+  grid-area: e5;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla6 {
+  grid-area: e6;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla7 {
+  grid-area: e7;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla8 {
+  grid-area: e8;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla9 {
+  grid-area: e9;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla10 {
+  grid-area: e10;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla11 {
+  grid-area: e11;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla12 {
+  grid-area: e12;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla13 {
+  grid-area: e13;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla14 {
+  grid-area: e14;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla15 {
+  grid-area: e15;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla16 {
+  grid-area: e16;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla17 {
+  grid-area: e17;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla18 {
+  grid-area: e18;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla19 {
+  grid-area: e19;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla20 {
+  grid-area: e20;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla21 {
+  grid-area: e21;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla22 {
+  grid-area: e22;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla23 {
+  grid-area: e23;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla24 {
+  grid-area: e24;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla25 {
+  grid-area: e25;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla26 {
+  grid-area: e26;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla27 {
+  grid-area: e27;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla28 {
+  grid-area: e28;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla29 {
+  grid-area: e29;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla30 {
+  grid-area: e30;
+}
+.paginas_portfolio_estudio-grilla .paginas_portfolio_estudio-grilla31 {
+  grid-area: e31;
+}
+
+@media (min-width: 660px) {
+  .paginas_portfolio_estudio {
+    background-image: url("../../images/estudio/estudioFondo-xl.jpg");
+  }
+}
+@media (min-width: 900px) {
+  .paginas_portfolio_estudio {
+    background-image: url("../../images/estudio/estudioFondo-xxl.jpg");
+  }
+}
 .contacto {
   display: flex;
   flex-direction: column;
