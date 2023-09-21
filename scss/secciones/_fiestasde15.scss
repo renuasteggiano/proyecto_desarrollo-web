@@ -1,0 +1,82 @@
+.paginas_portfolio_fiestas{
+    background-image: url('../../images/fiestade15/fiestade15Fondo.jpg');
+    
+}
+.paginas_portfolio_fiestas-grilla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "f1 f4 f4 f3"
+        "f5 f5 f9 f9"
+        "f7 f8 f8 f6"
+        "f11 f11 f12 f12"
+        "f13 f14 f15 f16"
+        "f2 f2 f10 f10"; 
+    margin: 5px 0px;
+    div{
+        img{
+            object-fit: cover;
+            width:100%;
+            height:100%;
+        }
+    }
+    .paginas_portfolio_fiestas-grilla1{
+        grid-area: f1;
+    }
+    .paginas_portfolio_fiestas-grilla2{
+        grid-area: f2;
+    }
+    .paginas_portfolio_fiestas-grilla3{
+        grid-area: f3;
+    }
+    .paginas_portfolio_fiestas-grilla4{
+        grid-area: f4;
+    }
+    .paginas_portfolio_fiestas-grilla5{
+        grid-area: f5;
+    }
+    .paginas_portfolio_fiestas-grilla6{
+        grid-area: f6;
+    }
+    .paginas_portfolio_fiestas-grilla7{
+        grid-area: f7;
+    }
+    .paginas_portfolio_fiestas-grilla8{
+        grid-area: f8;
+    }
+    .paginas_portfolio_fiestas-grilla9{
+        grid-area: f9;
+    }
+    .paginas_portfolio_fiestas-grilla10{
+        grid-area: f10;
+    }
+    .paginas_portfolio_fiestas-grilla11{
+        grid-area: f11;
+    }
+    .paginas_portfolio_fiestas-grilla12{
+        grid-area: f12;
+    }
+    .paginas_portfolio_fiestas-grilla13{
+        grid-area: f13;
+    }
+    .paginas_portfolio_fiestas-grilla14{
+        grid-area: f14;
+    }
+    .paginas_portfolio_fiestas-grilla15{
+        grid-area: f15;
+    }
+    .paginas_portfolio_fiestas-grilla16{
+        grid-area: f16;
+    }
+}
+@media (min-width: 550px){
+    .paginas_portfolio_fiestas{
+        background-image: url('../../images/fiestade15/fiestade15Fondo-xl.jpg');
+    }
+}
+@media (min-width: 750px){
+    .paginas_portfolio_fiestas{
+        background-image: url('../../images/fiestade15/fiestade15Fondo-xxl.jpg');
+    }
+}
