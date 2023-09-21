@@ -1,0 +1,62 @@
+.paginas_portfolio_exteriores{
+    background-image: url('../../images/exteriores/exterioresFondo.jpg');
+    
+}
+.paginas_portfolio_exteriores-grilla{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "e8 e3 e3 e4"
+        "e8 e3 e3 e4"
+        "e5 e5 e6 e6"
+        "e5 e5 e6 e6"
+        "e7 e2 e1 e1"
+        "e7 e2 e1 e1"
+        "e11 e9 e10 e12"
+        "e11 e9 e10 e12";
+    margin: 5px 0px;
+    div{
+        img{
+            object-fit: cover;
+            width:100%;
+            height:100%;
+        }
+    }
+    .paginas_portfolio_exteriores-grilla1{
+        grid-area: e1;
+    }
+    .paginas_portfolio_exteriores-grilla2{
+        grid-area: e2;
+    }
+    .paginas_portfolio_exteriores-grilla3{
+        grid-area: e3;
+    }
+    .paginas_portfolio_exteriores-grilla4{
+        grid-area: e4;
+    }
+    .paginas_portfolio_exteriores-grilla5{
+        grid-area: e5;
+    }
+    .paginas_portfolio_exteriores-grilla6{
+        grid-area: e6;
+    }
+    .paginas_portfolio_exteriores-grilla7{
+        grid-area: e7;
+    }
+    .paginas_portfolio_exteriores-grilla8{
+        grid-area: e8;
+    }
+    .paginas_portfolio_exteriores-grilla9{
+        grid-area: e9;
+    }
+    .paginas_portfolio_exteriores-grilla10{
+        grid-area: e10;
+    }
+    .paginas_portfolio_exteriores-grilla11{
+        grid-area: e11;
+    }
+    .paginas_portfolio_exteriores-grilla12{
+        grid-area: e12;
+    }
+}
